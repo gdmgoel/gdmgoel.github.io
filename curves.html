@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curves - Dhruv Goel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Trebuchet MS', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff;
+                color: #333333;
+            }
+            .navbar {
+            display: flex;
+            justify-content: space-between; /* Ensures equal spacing between items */
+            align-items: center;
+            background-color: #004d40;
+            padding: 0.5em; /* Added padding to provide more space */
+            flex-wrap: wrap; /* Allows wrapping of items if necessary */
+        }
+            .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            flex: 1; /* Flexible width to fill the space equally */
+            text-align: center; /* Centers the text within each flex item */
+            white-space: nowrap; /* Prevents breaking lines */
+            padding: 0.5em 1em; /* Added padding for spacing */
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown > a::after {
+            content: "";
+            display: inline-block;
+            margin-left: 8px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid white;
+            transform: translateY(-4px); /* Adjust to align the arrow vertically */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #004d40;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            min-width: 160px;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #333333;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+            .content {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 2em;
+            }
+            .profile-picture {
+                margin-left: 2em;
+            }
+            h1 {
+                color: #2e7d32;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 2em auto;
+                padding: 1em;
+            }
+            p.big {
+                line-height: 1.5;
+            }
+        
+            .section-style {
+                margin: 2em 0;
+            }
+            .section-style h2 {
+                color: #333333;
+            }
+        </style>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="writings.html">Writings & Publications</a>
+        <a href="talks.html">Talks</a>
+        <div class="dropdown">
+            <a href="teaching.html">Teaching & Mentorship</a>
+            <div class="dropdown-content">
+                <a href="curves.html">Curves @ Ross/Ohio 2024</a>
+            </div>
+        </div>
+        <a href="misc.html">Miscellaneous</a>
+    </div>
+    <!-- Container for Research and Publications Page Content -->
+    <div class="container">
+        <h1>Plane Algebraic Curves</h1>
+        <p class="big">Welcome to the course website for the advanced course on plane algebraic curves at <a href="https://rossprogram.org/">Ross</a>/Ohio 2024. This course is intended as an introduction to classical algebraic geometry for second-year students (i.e. peer mentors) and counselors at Ross.<sup><a href="#fn1" id="ref1">1</a></sup></p>
+        <div class="content">
+            <div>
+        Basic information:
+        <ul>
+            <li><b>Instructor</b>: Dhruv Goel [<tt><a href="mailto:gauravgoel@college.harvard.edu">gauravgoel@college.harvard.edu</a></tt>]
+            <li><b>Meeting Times and Locations</b>: See the Ross Calendar for updated times and locations.
+            <li><b>Topics Covered</b>: <em>The course topics will be adjusted based on the backgrounds and interests of the participants.</em> A tentative list of topics can be found <a href="curves.html#topics">below</a>.
+            <li><b>Texts/References</b>: I will type up <a href="curves.html#notes">my own lecture notes</a>. For other references, see <a href="curves.html#references">the section below</a>.
+            <li><b>Prerequisites</b>: Familiarity with the material on the Ross first-year sets, up to and including topics such as prime and irreducible elements, ideals, and algebraically closed fields. Familiarity with linear algebra and topology will occasionally be useful, but is not required.<sup><a href="#fn2" id="ref2">2</a></sup>
+            <li><b>Assignments and Collaboration Policy</b>: There are no formal assignments, although I will produce <a href="curves.html#exercises">weekly exercise sheets</a>. You do not need to turn in solutions, but you are welcome to discuss your solutions with me as well. You are highly encouraged to read the <a href="curves.html#notes">lecture notes</a> carefully and to attempt each problem in the exercise sheets by yourself, having done which, collaboration and discussion with your peers is highly welcome and encouraged.
+            <li><b>Graphing</b>: You are highly encouraged to make full use of wonderful graphing software such as <a href="https://www.desmos.com/">Desmos</a> and <a href="https://www.wolframalpha.com/">WolframAlpha</a> to make your experience in this course more enjoyable.
+        </ul>
+
+   </div>
+   <div>
+       <img src="nodal.jpg" alt="Nodal Cubic Curve" style="max-width: 500px">
+   </div>
+    
+    </div>
+
+                 </p>
+        <sup id="fn1">1. This course is NOT for first-year students at Ross, and first-year students are generally not encouraged to take this course; if you are a first-year student who <em>really</em> wants to sit in, let me and your counselor know and we can discuss your specific situation.<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup>
+        <br>
+        <sup id="fn2">2. If you would like to come to this course but are unsure about whether you have enough background, you probably do. Even if you don't, I believe that you will certainly gain something from coming to the lectures, even if you don't understand them fully. You are also welcome to write to me to discuss this.<a href="#ref2" title="Jump back to footnote 2 in the text.">↩</a></sup>
+        <section class="section-style" id="topics">
+        <h2>Topics Covered</h2>
+  The current (tentative, possibly slightly ambitious) list of topics I plan to talk about is:
+                <ol>
+                    <li> Affine algebraic curves over an arbitrary field \(k\), coordinate rings, affine changes of coordinates
+                    <li> Lots of examples (e.g. synthetic constructions, parametric and polar curves), digression on connections to other fields of math (e.g. number theory, complex analysis)
+                    <li> The interplay between algebra and geometry: irreducibility, reducedness, finiteness of curve intersection using Gauss's Lemma, Nullstellensatz for \(\mathbb A^2_k\)
+                    <li> Local properties: smoothness, tangent lines/cones, multiplicity of a point, rational functions, local rings, local intersection multiplicity
+                    <li> Introduction to the projective plane and projective curves, points at infinity, (de)homogenization, projective changes of coordinates
+                    <li> Classification of affine and projective conics over \(k=\mathbb C\)
+                    <li> Theorems of Bezout and Max Noether and applications (Pascal's Theorem, Pappus' Theorem, <s>Cayley-Bacharach</s>  Chasles's Theorem)
+                    <li> Classification of projective cubic curves and introduction to elliptic curves (e.g. associativity of group law)
+                </ol>
+                Further topics (if time permits) might include:
+                <ol start = 9>
+                    <li> Topology of real plane curves (connected components, convexity, nesting, Harnack's Theorem)
+                    <li> Inflection points, polars and Hessians
+                    <li> Pencils of conics, parameter spaces, solving the quartic equation using algebraic geometry
+                    <li> More on elliptic curves (Weierstrass normal form, torsion points)
+                    <li> Divisors and the Riemann-Roch Theorem (and applications)
+                    <li> More singularity theory: conductors, knots, etc.
+                </ol>
+                
+                <b>Update 07/22/24</b>: The course covered topics 1-8, 11, and 12.
+                <section class="section-style" id="notes">
+                <h2>Lecture Notes</h2>
+                
+                Lecture notes will be updated <em>after</em> the corresponding lecture. Here is the <a href="Curves/Full.pdf">full file (including exercises)</a>, last updated on 07/15/24. Here are the notes sorted by lecture:
+                Lecture notes will be updated <em>after</em> the corresponding lecture. Here is the <a href="Curves/Full.pdf">full file (including exercises)</a>, last updated on 07/15/24. Here are the notes sorted by lecture:
+                <ul>
+                    <li><a href="Curves/Lecture1.pdf">Lecture 1</a>; posted on 06/10/24; introduction
+                    <li><a href="Curves/Lecture2.pdf">Lecture 2</a>; posted on 06/12/24; degree I, more examples
+                    <li><a href="Curves/Lecture3.pdf">Lecture 3</a>; posted on 06/14/24; parametric curves
+                    <li><a href="Curves/Lecture4.pdf">Lecture 4</a>; posted on 06/17/24; affine changes of coordinates, algebraically closed fields
+                    <li><a href="Curves/Lecture5.pdf">Lecture 5</a>; posted on 06/19/24; irreducibility I, unique factorization I
+                    <li><a href="Curves/Lecture6.pdf">Lecture 6</a>; posted on 06/21/24; nullstellensatz, irreducibility II, unique factorization II
+                    <li><a href="Curves/Lecture7.pdf">Lecture 7</a>; posted on 06/24/24; ideals, irreducible components, degree II
+                    <li><a href="Curves/Lecture8.pdf">Lecture 8</a>; posted on 06/26/24; smoothness, multiplicity, tangent lines
+                    <li><a href="Curves/Lecture9.pdf">Lecture 9</a>; posted on 06/28/24; derivations, intersection multiplicity
+                    <li><a href="Curves/Lecture10.pdf">Lecture 10</a>; posted on 07/01/24; intersection multiplicity, the projective plane
+                    <li><a href="Curves/Lecture11.pdf">Lecture 11</a>; posted on 07/03/24 [delayed to 07/10/24]; projective duality, (de)homogenization, projective nullstellensatz
+                    <li><a href="Curves/Lecture12.pdf">Lecture 12</a>; posted on 07/05/24 [delayed to 07/10/24]; projective changes of coordinates, multiplicity and smoothness, classification of projective conics
+                    <li><a href="Curves/Lecture13.pdf">Lecture 13</a>; posted on 07/08/24 [delayed to 07/15/24]; parametric projective curves, pascal's theorem, more on conics
+                    <li><a href="Curves/Lecture14.pdf">Lecture 14</a>; posted on 07/08/24 [delayed to 07/15/24]; proof(s) of bézout's theorem
+                    <li><a href="Curves/Lecture15.pdf">Lecture 15</a>; posted on 07/08/24 [delayed to 07/15/24]; more applications, pencils of curves, introduction to elliptic curves
+                    <li>Lecture 16; to be posted on 07/15/24; [TBD]
+                    <li>Lecture 17; to be posted on 07/17/24; [TBD]
+                </ul>
+
+
+                </section>
+                
+                <section class="section-style" id="exercises">
+                <h2>Exercise Sheets</h2>
+                
+                There will be six of these; one for each week. The exercise sheet for a week will be posted <em>at the beginning of that week</em>, so you can start engaging with the problems as soon as possible. Here are the exercise sheets:
+                
+                <ul>
+                    <li><a href="Curves/Sheet1.pdf">Exercise Sheet 1</a>; posted on 06/10/24
+                        <li><a href="Curves/Sheet2.pdf">Exercise Sheet 2</a>; posted on 06/17/24
+                        <li><a href="Curves/Sheet3.pdf">Exercise Sheet 3</a>; posted on 06/24/24
+                        <li><a href="Curves/Sheet4.pdf">Exercise Sheet 4</a>; posted on 07/01/24 [delayed to 07/02/24]
+                        <li><a href="Curves/Sheet5.pdf">Exercise Sheet 5</a>; posted on 07/08/24
+                        <li><a href="Curves/Sheet6.pdf">Exercise Sheet 6</a>; posted on 07/15/24
+                </ul>
+                </section>
+
+        <section class="section-style" id="references">
+            
+        <h2>Textbooks and References</h2>
+        
+        Some other useful references at a level similar to that of this course are:
+            <ol>
+                <li> <a href="https://agag-gathmann.math.rptu.de/en/curves.php">These lecture notes</a> by Andreas Gathmann for a similar course.
+                <li> The first two chapters of Miles Reid's textbook <em>Undergraduate Algebraic Geometry</em>, legally available for free <a href="https://homepages.warwick.ac.uk/staff/Miles.Reid/MA4A5/UAG.pdf">here</a>.
+            </ol>
+        The following are more advanced textbooks suited for a full-scale undergraduate course on algebraic geometry:
+        <ol start = 3>
+            <li> The textbook titled <a href="https://link.springer.com/book/10.1007/0-8176-4443-1"><em>Introduction to Plane Algebraic Curves</em></a> by Ernst Kunz.
+            <li> Fulton's textbook titled <em>Algebraic Curves: An Introduction to Algebraic Geometry</em>, legally available for free <a href="https://dept.math.lsa.umich.edu/~wfulton/CurveBook.pdf">here</em></a>.
+                <li> Harris's textbook titled <a href="https://link.springer.com/book/10.1007/978-1-4757-2189-8"><em>Algebraic Geometry: A First Course</em></a>. (Disclaimer: I'm slightly biased in my choices, since Harris was my advisor.)
+        </ol>
+        For much more encyclopaedic, somewhat outdated, but still fairly accessible treatments, I would recommend:
+        <ol start = 6>
+            <li>The book by Brieskorn and Knörrer titled <a href="https://link.springer.com/book/10.1007/978-3-0348-5097-1"><em>Plane Algebraic Curves</em></a>.
+            <li>The book by Walker titled <a href="https://link.springer.com/book/9780387903613"><em>Algebraic Curves</em></a>.
+        </ol>
+        
+        If you need assistance in accessing any of these references, please do not hesitate to reach out to me.
+        </section>
+
+    </div>
+</body>
+</html>
+

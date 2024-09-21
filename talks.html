@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talks - Dhruv Goel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Trebuchet MS', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff;
+                color: #333333;
+            }
+            .navbar {
+            display: flex;
+            justify-content: space-between; /* Ensures equal spacing between items */
+            align-items: center;
+            background-color: #004d40;
+            padding: 0.5em; /* Added padding to provide more space */
+            flex-wrap: wrap; /* Allows wrapping of items if necessary */
+        }
+            .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            flex: 1; /* Flexible width to fill the space equally */
+            text-align: center; /* Centers the text within each flex item */
+            white-space: nowrap; /* Prevents breaking lines */
+            padding: 0.5em 1em; /* Added padding for spacing */
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown > a::after {
+            content: "";
+            display: inline-block;
+            margin-left: 8px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid white;
+            transform: translateY(-4px); /* Adjust to align the arrow vertically */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #004d40;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            min-width: 160px;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #333333;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+            .content {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 2em;
+                background-color: #f4f4f4;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .profile-picture {
+                margin-left: 2em;
+            }
+            h1 {
+                color: #2e7d32;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 2em auto;
+                padding: 1em;
+            }
+            p.big {
+                line-height: 1.5;
+            }
+            li {
+                margin: 10px 0;
+            }
+            .section-style {
+                margin: 2em 0;
+            }
+            .section-style h2 {
+                color: #333333;
+            }
+        </style>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="writings.html">Writings & Publications</a>
+        <a href="talks.html">Talks</a>
+        <div class="dropdown">
+            <a href="teaching.html">Teaching & Mentorship</a>
+            <div class="dropdown-content">
+                <a href="curves.html">Curves @ Ross/Ohio 2024</a>
+            </div>
+        </div>
+        <a href="misc.html">Miscellaneous</a>
+    </div>
+    <!-- Container for Research and Publications Page Content -->
+    <div class="container">
+        <h1>Talks</h1>
+        <section class="section-style">
+        <h2>Invited</h2>
+        <ol>
+            <li><em><a href="https://www.math.harvard.edu/event/special-lecture-from-triangles-to-algebraic-geometry-2-2/"><b>The Atiyah-Singer Index Theorem and Almost Complex Spheres</b></a></em>, Special Talk by the Friends Prize Recipient, Harvard University, April 2024.
+            <li><em><a href="https://ahmad-mokhtar.github.io/gradieNTAG/#:~:text=Wed%20Apr%203,Zoom"><b>The Chow Ring Classes of \(\mathrm{PGL}_3\) Orbit Closures in \(\mathbb{G}(1, 5)\)</b></a></em>, gradieNTAG, Simon Fraser University, April 2024.
+            <li><em><a href="https://ahmad-mokhtar.github.io/gradieNTAG/#:~:text=Wed%20Apr%203,Zoom"><b>Chow Classes of Varieties of Secant and Tangent Lines</b></a></em>, Special Student Algebraic Geometry Seminar, Stanford University, March 2024.
+        </ol>
+        </section>
+
+        <section class="section-style">
+        <h2>Contributed</h2>
+
+        <ol>
+            <li><em><a href="https://math.osu.edu/activities/colloquium/what-is"><b>What is Sharkovsky's Theorem, or why does period three imply chaos?</b></a></em>, What is ... ? Seminar, Ohio State University, June 2024. (<a href="Writings/Sharkovsky.pdf">Notes</a>)
+            <li><em><b>On Powerful Integers Expressible as Sums of Two Coprime Fourth Powers</b></em>, Fifteenth Algorithmic Number Theory Symposium, ANTS-XV, University of Bristol, August 2022. (<a href="https://youtu.be/LXT83ozuoZw">Recording</a>, <a href="Writings/ANTS_2022_Presentation.pdf">Slides</a>)
+            <li><em><b>The Inverse [Quadratic] Central Potential and the Cubic Equation</b></em>, Undergraduate Chalk Talks, Harvard Society of Physics Students (SPS), November 2021.
+        </ol>
+
+        <h3><a href="https://rossprogram.org/">Ross Mathematics Program USA</a></h3>
+        <ol start = 4>
+            <li><em><b>Indra's Pearls: Symmetry, Recursion, and Beauty in Mathematics</b></em><sup><a href="#fn1" id="ref1">1</a></sup>, July 2024. (<a href="Writings/Indras_Pearls_Slides.pdf">Slides</a>)
+            <li><em><b>Can You Solve It (It = A Quintic)? Topology Says No</b></em>, or <em><b>On Arnold's Proof of the Unsolvability of the Quintic</b></em>, June 2024.
+            <li><em><b>Galois Cohomology and Hilbert's Theorem 90</b></em>, Dorm Lecture, August 2021.
+        </ol>
+
+        
+        <h3><a href="https://www.hmmt.org/">Harvard-MIT Mathematics Tournament</a> Education Session</h3>
+        <ol start =7>
+            <li><em><b>Emmy Noether: Mathematician Extraordinaire</b></em><sup><a href="#fn2" id="ref2">2</a></sup>, November 2022.
+            <li><b><em>The Three Sphere in Dante's</em> Divine Comedy</b></em>, February 2022.
+            <li><em><b>What is Algebraic Geometry and Why Do We Care?</b></em>, November 2020. (<a href="https://www.youtube.com/watch?v=kuUH8lNmTvo">Recording</a>)
+
+        </ol>
+        
+        <h3><a href="https://sites.google.com/g.harvard.edu/mathtable">Harvard Math Table</a></h3>
+        <ol start = 10>
+            <li><em><a href="https://sites.google.com/g.harvard.edu/mathtable/archive_1/spring-2024#h.sci55rg8kvpi"><b>(Almost) Complex Structures on 4-Manifolds</b></a></em>, May 2024.
+            <li><em><b>Fermat's Little Theorem and Applications to Cryptography</b></em>, October 2019.
+        </ol>
+        </section>
+    </div>
+    <sup id="fn1">1. Based on <a href="http://klein.math.okstate.edu/IndrasPearls/">the book by Mumford-Series-Wright</a>.<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup>
+    <br>
+    <sup id="fn2">2. Based on <a href="https://link.springer.com/content/pdf/10.1007/978-3-030-63810-8.pdf">the book by David E. Rowe</a>.<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup>
+</body>
+</html>
+

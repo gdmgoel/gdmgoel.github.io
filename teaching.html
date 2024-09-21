@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching & Mentorship - Dhruv Goel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Ensures equal spacing between items */
+            align-items: center;
+            background-color: #004d40;
+            padding: 0.5em; /* Added padding to provide more space */
+            flex-wrap: wrap; /* Allows wrapping of items if necessary */
+        }
+            .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            flex: 1; /* Flexible width to fill the space equally */
+            text-align: center; /* Centers the text within each flex item */
+            white-space: nowrap; /* Prevents breaking lines */
+            padding: 0.5em 1em; /* Added padding for spacing */
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown > a::after {
+            content: "";
+            display: inline-block;
+            margin-left: 8px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid white;
+            transform: translateY(-4px); /* Adjust to align the arrow vertically */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #004d40;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            min-width: 160px;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #333333;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 2em;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-picture {
+            margin-left: 2em;
+        }
+        h1 {
+            color: #2e7d32;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 1em;
+        }
+        li {
+          margin: 10px 0;
+        }
+        .section-style {
+            margin: 2em 0;
+        }
+        .section-style h2 {
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="writings.html">Writings & Publications</a>
+        <a href="talks.html">Talks</a>
+        <div class="dropdown">
+            <a href="teaching.html">Teaching & Mentorship</a>
+            <div class="dropdown-content">
+                <a href="curves.html">Curves @ Ross/Ohio 2024</a>
+            </div>
+        </div>
+        <a href="misc.html">Miscellaneous</a>
+    </div>
+    <!-- Container for Research and Publications Page Content -->
+    <div class="container">
+        <h1>Teaching and Mentorship</h1>
+        <section class="section-style">
+        <h2>Ross Mathematics Program USA</h2>
+        <h3>Visiting Lecturer, Ross/Ohio, Summer 2024</h3>
+        <ol>
+            <li>Course Head, <b>Plane Algebraic Curves</b>. I designed and taught a course on classical algebraic geometry aimed at returning students and counselors. The course website can be found <a href="curves.html">here</a>.</li>
+        </ol>
+        In addition, I gave the following talk series (or mini courses) aimed at counselors:
+
+        <ol start = 2>
+            <li><b>Mathematical Ghostbusters: Despookifying Spectral Sequences</b>
+            <li><b>Cohomology of Curves</b>
+        </ol>
+        <h3>Counselor, Ross/Zoom, Summer 2021</h3>
+        <ol start = 4>
+            <li>I led discussion sessions for a small group of high school students for a course on elementary number theory.</li>
+            <li>I also served as a CA for <a href="https://people.math.osu.edu/patrikis.1/ross2021.html"><em>Rational Points on Curves</em></a>, an advanced course on arithmetic geometry aimed at counselors taught by <a href="https://people.math.osu.edu/patrikis.1/">Stefan Patrikis</a>.</li>
+        </ol>
+        <h2>Course Assistant (CA), Department of Mathematics, Harvard University</h2>
+        
+            <ol>
+                <li> <b>Math 222: Lie Groups and Lie Algebras</b> taught by <a href="https://people.math.harvard.edu/~elkies/">Noam D. Elkies</a> in Spring 2024 (<a href="https://people.math.harvard.edu/~elkies/M222.23/">course website</a>);
+                <li> <b>Math 213A: Advanced Complex Analysis</b> taught by <a href="https://people.math.harvard.edu/~ctm/">Curt McMullen</a> in Fall 2023 (<a href="https://people.math.harvard.edu/~ctm/math213a/index.html">course website</a>);
+                <li> <b>Math 129: Number Fields</b> taught by <a href="https://people.math.harvard.edu/~tayou/">Salim Tayou</a> in Spring 2023;
+                <li> <b>Math 114: Analysis of Function Spaces, Measure, and Integration</b> taught by <a href="https://people.math.harvard.edu/~htyau/">H. T. Yau</a> in Fall 2022;
+                <li> <b>Math 132: Differential Topology</b> taught by <a href="https://people.mpim-bonn.mpg.de/gaitsgde/index.html">Dennis Gaitsgory</a> in Spring 2022; and
+                <li> <b>Math 55A: Honors Group Theory and Linear Algebra</b> taught by <a href="https://people.math.harvard.edu/~auroux/">Denis Auroux</a> in Fall 2022.
+            </ol>
+            
+            I was also a volunteer CA for:
+            
+            <ol start = 7>
+                <li> <b>Math 132: Differential Topology</b> taught by <a href="https://en.wikipedia.org/wiki/Joe_Harris_(mathematician)">Joe Harris</a> in Spring 2021;
+                <li><b>Math 55B: Honors Real and Complex Analysis</b> taught by <a href="https://people.math.harvard.edu/~auroux/">Denis Auroux</a> in Spring 2021; and
+                <li> <b>Math 55A: Honors Group Theory and Linear Algebra</b> taught by <a href="https://people.math.harvard.edu/~auroux/">Denis Auroux</a> in Fall 2021.
+            </ol>
+        </section>
+        <section class="section-style">
+        <h2>Other Teaching</h2>
+            
+        <ol>
+            <li> In Summer 2020, I designed and taught <b>Math 57</b>, an introductory course in group theory aimed at high schoolers which was part of <a href="https://sites.google.com/view/alecsun">Alec Sun</a>'s Math Online Summer Program (MOSP). Here are the <a href="Writings/Math_57_Notes.pdf">lecture notes</a> I typed up for it.
+            <li>In 2018-2019, I was a teaching assistant in the Math Olympiad Program at Pace Junior Science College, Andheri.
+            </li>
+        </ol>
+        </section>
+        <section class="section-style">
+        <h2>Teaching and Mentorship Philosophy</h2>
+        
+                
+        <p> I firmly believe that the best math is done together, and math can only be done together when everyone feels welcome, supported, and empowered to contribute. There is plenty of math for everyone, and it is the responsibility of all math students and educators to convince the world of that.</p>
+        
+        <p>I am a big fan of <a href="https://fardila.com/">Federico Ardila</a>'s axioms from <a href="https://www.ams.org/publications/journals/notices/201610/rnoti-p1164.pdf"><em>Todos Cuentan</em></a>:</p>
+        <ol>
+            <li> Mathematical potential is equally present in different groups, irrespective of geographic, demographic, and economic boundaries.
+            <li> Everyone can have joyful, meaningful, and empowering mathematical experiences.
+            <li> Mathematics is a powerful, malleable tool that can be shaped and used differently by various communities to serve their needs.
+            <li> Every student deserves to be treated with dignity and respect.
+        </ol>
+        </section>
+    </div>
+</body>
+</html>
+

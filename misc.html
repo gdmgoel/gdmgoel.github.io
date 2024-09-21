@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miscellaneous - Dhruv Goel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Ensures equal spacing between items */
+            align-items: center;
+            background-color: #004d40;
+            padding: 0.5em; /* Added padding to provide more space */
+            flex-wrap: wrap; /* Allows wrapping of items if necessary */
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            flex: 1; /* Flexible width to fill the space equally */
+            text-align: center; /* Centers the text within each flex item */
+            white-space: nowrap; /* Prevents breaking lines */
+            padding: 0.5em 1em; /* Added padding for spacing */
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown > a::after {
+            content: "";
+            display: inline-block;
+            margin-left: 8px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid white;
+            transform: translateY(-4px); /* Adjust to align the arrow vertically */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #004d40;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            min-width: 160px;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #333333;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 2em;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-picture {
+            margin-left: 2em;
+        }
+        h1 {
+            color: #2e7d32;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 1em;
+        }
+        li {
+          margin: 10px 0;
+        }
+        .section-style {
+            margin: 2em 0;
+        }
+        .section-style h2 {
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="writings.html">Writings & Publications</a>
+        <a href="talks.html">Talks</a>
+        <div class="dropdown">
+            <a href="teaching.html">Teaching & Mentorship</a>
+            <div class="dropdown-content">
+                <a href="curves.html">Curves @ Ross/Ohio 2024</a>
+            </div>
+        </div>
+        <a href="misc.html">Miscellaneous</a>
+    </div>
+    <div class="container">
+        <h1>Miscellaneous</h1>
+        <section class="section-style">
+        <h2>Math Community</h2>
+        
+        I was a member of <a href="https://harvardgiim.org/">Harvard Undergraduate Gender Inclusivity in Math</a> from 2021 to 2023. I served as the co-president for AY 2022-23, and as the mentorships co-chair for the AY 2021-22.
+        </section>
+        <section class="section-style" id="singing">
+        <h2>Singing</h2>
+        
+        <ul>
+            <li>I was a member of the <a href="https://memorialchurch.harvard.edu/harvard-university-choir">Harvard University Choir</a> from 2022 to 2024, and a <a href="https://memorialchurch.harvard.edu/ferris-fellows">Ferris Choral Fellow</a> for the AY 2023-24.
+            <li>I was a member of the <a href="https://harvardgleeclub.org/">Harvard Glee Club</a> from 2019 to 2024, and in <a href="https://lite.harvardgleeclub.org/about/">Glee Club Lite</a> for the AY 2021-22.
+            <li>In February 2022, I played the baritone role of Bard in the premier of Harry Sage’s <em>If a Picture Never Lies</em>, an operatic adaptation of Virgil’s <em>Bucolics</em>, Eclogues 1, 2, and 9. The Harvard Crimson published <a href="https://www.thecrimson.com/article/2022/3/4/if-a-picture-never-lies-feature/">an article about it</a>.
+        </ul>
+        </section>
+        <section class="section-style" id="compositions">
+        <h2>Compositions</h2>
+        
+        As a member of the <a href="https://www.singatharvard.com/hcnmi.html">Harvard Choruses New Music Initiative</a> from 2022 to 2024, I wrote:
+        <ol>
+            <li><a href="Compositions/Daffodils.pdf"><em>Daffodils</em></a>, a setting of Wordsworth’s poem <em>I Wandered Lonely as a Cloud</em> for the Harvard Glee Club. This piece premiered in <a href="https://amcathparis.com/">the American Cathedral in Paris</a> during our Europe tour in January 2024. <a href="https://youtu.be/urzK-gwMkkM?t=1020">Here is a recording</a> of us performing the piece <a href="https://websites.harvard.edu/memhall/home-2/buildings/sanders-theatre/">Sanders Theatre</a>, conducted by me.
+            <li><a href="Compositions/I_Sing_Because_I_Can_Final.pdf"><em>I Sing Because I Can</em></a> for <a href="https://www.singatharvard.com/ccv.html">Cambridge Common Voices</a>.
+        </ol>
+        
+        In addition:
+        
+        <ol start = 3>
+            <li> As part of my final project for Music 51B: Theory Ib at Harvard in Spring 2021, I wrote a piece for string quartet titled <a href="Compositions/You_Are_What_You_Sing.pdf"><em>You Are What You Sing</em></a>, which was premiered by the <a href="https://parkerquartet.com/">Grammy Award-winning Parker Quartet</a>.
+        </ol>
+        
+        </section>
+        <h2>Speeches</h2>
+        
+        Here are recordings of two speeches I gave at Harvard:
+        <ol>
+            <li><a href="https://soundcloud.com/memorial-church/dhruv-goel-24-march-6-2024-morning-prayers?in=memorial-church/sets/morning-prayers-at-harvard-5"><b>Love in Doing</b></a>, the speech I gave at <a href="https://memorialchurch.harvard.edu/morningprayers">Morning Prayers at Harvard’s Memorial Church</a>, and
+            <li><a href="https://vimeo.com/919030622"><b>Training Wheels</b></a>, my <a href="https://lowell.harvard.edu/lowell-speeches">Lowell Speech</a> about my suitemates.
+
+        </ol>
+    </div>
+</body>
+</html>
+

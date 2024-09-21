@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing & Publications - Dhruv Goel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Trebuchet MS', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff;
+                color: #333333;
+            }
+            .navbar {
+            display: flex;
+            justify-content: space-between; /* Ensures equal spacing between items */
+            align-items: center;
+            background-color: #004d40;
+            padding: 0.5em; /* Added padding to provide more space */
+            flex-wrap: wrap; /* Allows wrapping of items if necessary */
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            flex: 1; /* Flexible width to fill the space equally */
+            text-align: center; /* Centers the text within each flex item */
+            white-space: nowrap; /* Prevents breaking lines */
+            padding: 0.5em 1em; /* Added padding for spacing */
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown > a::after {
+            content: "";
+            display: inline-block;
+            margin-left: 8px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid white;
+            transform: translateY(-4px); /* Adjust to align the arrow vertically */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #004d40;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            min-width: 160px;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #333333;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+            .content {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 2em;
+                background-color: #f4f4f4;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .profile-picture {
+                margin-left: 2em;
+            }
+            h1 {
+                color: #2e7d32;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 2em auto;
+                padding: 1em;
+            }
+            li {
+              margin: 10px 0;
+            }
+            .section-style {
+                margin: 2em 0;
+            }
+            .section-style h2 {
+                color: #333333;
+            }
+        </style>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="writings.html">Writings & Publications</a>
+        <a href="talks.html">Talks</a>
+        <div class="dropdown">
+            <a href="teaching.html">Teaching & Mentorship</a>
+            <div class="dropdown-content">
+                <a href="curves.html">Curves @ Ross/Ohio 2024</a>
+            </div>
+        </div>
+        <a href="misc.html">Miscellaneous</a>
+    </div>
+
+    <div class="container">
+        <h1>Writings and Publications</h1>
+
+        <section class="section-style">
+        <h2>Publications</h2>
+        <ol>
+            <li> On Powerful Integers Expressible as Sums of Two Coprime Fourth Powers (with <a href="https://people.math.harvard.edu/~elkies/">Noam D. Elkies</a>). <em>Res. Number Theory</em> <b>9</b>, 78 (2023) (proceedings of ANTS-XV 2022). <a href="https://doi.org/10.1007/s40993-022-00415-9">doi: 10.1007/s40993-022-00415-9</a>
+        </ol>
+        </section>
+        <section class="section-style">
+        <h2>Preprints</h2>
+            
+        <ol>
+            <li> The Chow Ring Classes of \(\mathrm{PGL}_3\) Orbit Closures in \(\mathbb{G}(1, 5)\). 2022. [<a href="http://arxiv.org/abs/2310.18571">arXiv</a>]
+        </ol>
+        </section>
+        <section class="section-style">
+        <h2>Research Articles in Preparation</h2>
+        <ol>
+            <li> Chow Classes of Varieties of Secant and Tangent Lines to a Projective Variety. Advisor: <a href="https://math.berkeley.edu/~hlarson/">Hannah Larson</a>.
+
+        </ol>
+        </section>
+        
+        <section class="section-style" id="thesis">
+        <h2>Theses</h2>
+        <ol>
+            <li> <a href="Writings/Thesis_Goel_Edited.pdf">The Joys of the Atiyah-Singer Index Theorem</a>. Undergraduate Senior Thesis, advised by <a href="https://people.math.harvard.edu/~dafr/">Dan Freed</a> and <a href="https://www.math.harvard.edu/people/harris-joe/">Joe Harris</a>, March 2024. (Updated September 2024 to include minor corrections.)
+        </ol>
+        </section>
+        <section class="section-style">
+        <h2>Expository</h2>
+        
+        <ol>
+            <li> <a href="Writings/Clifford_Algebras_and_Spin_Groups.pdf">An Introduction to Clifford Algebras and Spin Groups</a>
+            <li> <a href="Writings/Elliptic_K3_Surfaces.pdf">Elliptic K3 Surfaces</a>
+            <li> <a href="Writings/Hamiltonian_Actions_and_Marsden-Weinstein-Meyer_Reduction.pdf">Hamiltonian Actions and Marsden-Weinstein-Meyer Reduction</a>
+            <li> <a href="Writings/Symplectic_Geometry_and_Hamiltonian_Mechanics.pdf">Symplectic Geometry and Hamiltonian Mechanics</a> (with Charley Hutchison)
+            <li> <a href="Writings/Covariant_Derivatives_Connections_Curvature.pdf">Covariant Derivatives, Connections, and Curvature</a>
+            <li> <a href="Writings/Character_Table_of_Nonabelian_Group_of_Order_pq.pdf">The Character Table of the Nonabelian Group of Order \(pq\)</a>
+            <li> <a href="Writings/Introduction_to_Modular_Jacobians.pdf">An Introduction to Modular Jacobians</a>
+            <li> <a href="Writings/Rectangular_Circumhyperbolae.pdf">Rectangular Circumhyperbolae</a>
+                
+        </ol>
+        </section>
+        <section class="section-style">
+        <h2>Other</h2>
+        
+        <ol>
+            <li> <a href="Writings/A_Second_Course_in_Commutative_Algebra.pdf">A Second Course in Commutative Algebra</a>, an incomplete collection of lecture notes based on Math 221: Commutative Algebra taught by <a href="https://people.math.harvard.edu/~mpopa/">Mihnea Popa</a> in Fall 2020.
+            <li> <a href="Writings/A_Second_Course_in_Real_Analysis.pdf">A Second Course in Real Analysis</a>, an incomplete collection of lecture notes on real analysis.
+            <li> <a href="Writings/Representation_Theory_Notes.pdf">Representation Theory Review Notes</a>, a collection of notes on representation theory based on the first three chapters of <em>Representation Theory: A First Course</em> by Fulton and Harris that I used for my review sections for Math 55A, Fall 2022.
+            <li> <a href="Writings/Math_57_Notes.pdf">Math 57 Notes</a>, a collection of lecture notes on group theory for a course for high schoolers I designed and taught in 2020 as part of the Math Online Summer Program (MOSP) organized by <a href="https://sites.google.com/view/alecsun/home">Alec Sun</a>.
+        </ol>
+        </section>
+    </div>
+</body>
+</html>
+
