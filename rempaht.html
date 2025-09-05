@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReMp-AHT Seminar - Dhruv Goel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Trebuchet MS', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff;
+                color: #333333;
+            }
+            .navbar {
+            display: flex;
+            justify-content: space-between; /* Ensures equal spacing between items */
+            align-items: center;
+            background-color: #004d40;
+            padding: 0.5em; /* Added padding to provide more space */
+            flex-wrap: wrap; /* Allows wrapping of items if necessary */
+        }
+            .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            flex: 1; /* Flexible width to fill the space equally */
+            text-align: center; /* Centers the text within each flex item */
+            white-space: nowrap; /* Prevents breaking lines */
+            padding: 0.5em 1em; /* Added padding for spacing */
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown > a::after {
+            content: "";
+            display: inline-block;
+            margin-left: 8px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid white;
+            transform: translateY(-4px); /* Adjust to align the arrow vertically */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #004d40;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            min-width: 160px;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #333333;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+            .content {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 2em;
+                background-color: #f4f4f4;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .profile-picture {
+                margin-left: 2em;
+            }
+            h1 {
+                color: #2e7d32;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 2em auto;
+                padding: 1em;
+            }
+            p.big {
+                line-height: 1.5;
+            }
+            li {
+                margin: 10px 0;
+            }
+            .section-style {
+                margin: 2em 0;
+            }
+            .section-style h2 {
+                color: #333333;
+            }
+      
+            .hidden {
+            display: none;
+             }
+            .toggle-link {
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+            }
+  </style>
+        </style>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="writings.html">Writings & Publications</a>
+        <a href="talks.html">Talks</a>
+        <div class="dropdown">
+            <a href="teaching.html">Teaching & Mentorship</a>
+            <div class="dropdown-content">
+                <a href="curves.html">Curves @ Ross/Ohio 2024</a>
+            </div>
+        </div>
+        <a href="misc.html">Miscellaneous</a>
+    </div>
+    <!-- Container for Research and Publications Page Content -->
+    <div class="container">
+        <h1>ReMp-AHT Seminar</h1>
+        <section class="section-style">
+        <p>This is the webpage for the weekly seminar on <b>Re</b>medial <b>M</b>athematics for <b>\(p\)-A</b>dic <b>H</b>odge <b>T</b>heory, a learning seminar that covers background material needed to better understand and appreciate <a href="https://www.math.ias.edu/~bhatt/">Bhargav Bhatt</a>'s course <a href="https://registrar.princeton.edu/course-offerings/course-details?term=1262&courseid=012345">Topics in Arithmetic Geometry: \(p\)-adic Hodge theory</a> taught at Princeton in Fall 2025.</p>
+        
+        <p>
+            <h2>Logistics</h2>
+            <b>Time</b>: [TBD] <br>
+            <b>Place</b>: [TBD] <br>
+            <b>Contact</b>: Dhruv Goel (<a href="mailto: gg8327@princeton.edu">gg8327@princeton.edu</a>).<br><br>
+            Preliminarily, I think the seminar will take place on Mondays from 1200-1300, although this is subject to change. If you wish to have a say, reach out.
+        </p>
+
+        <p>
+            <h2>Talk Titles</h2>
+            <b>Disclaimer</b>: This list of titles is tentative and subject to change. If you would like to suggest a topic, come to the first meeting.
+            <br>
+            <ol>
+                <li>Dhruv: <span class="toggle-link" data-target="item1">Organizational Meeting and a Review of \(p\)-adic Formal Schemes</span>
+    
+                <p id="item1" class="hidden"><b>Abstract</b>: We will finalize the meeting time and place, discuss topics to be covered, and distribute the talks. If time permits, we will quickly review the theory of formal schemes from Hartshorne &sectII.9.</p>
+                
+                </li>
+                <li>Michael [TBD]: <span class="toggle-link" data-target="item2">Derived Categories and the Derived \(p\)-Completion</span>
+    
+                <p id="item2" class="hidden"><b>Abstract</b>: [TBD]</p>
+                
+                </li>
+                 
+                <li>Kenta [TBD]: <span class="toggle-link" data-target="item3">What the **** is a stack and why should I care?</span>
+    
+                <p id="item3" class="hidden"><b>Abstract</b>: [TBD]</p>
+                
+                </li>
+
+                <li>[TBD]: <span class="toggle-link" data-target="item4">Almost Mathematics</span>
+    
+                <p id="item4" class="hidden"><b>Abstract</b>: [TBD]</p>
+                
+                </li>
+
+                <li>[TBD]: <span class="toggle-link" data-target="item5">All Things Perfectoid I</span>
+    
+                <p id="item5" class="hidden"><b>Abstract</b>: About perfectoid rings. [TBD]</p>
+                
+                </li>
+                
+                <li>Quanlin [TBD]: <span class="toggle-link" data-target="item6">An Introduction to Adic Spaces &agrave la Hubert</span>
+    
+                <p id="item6" class="hidden"><b>Abstract</b>: [TBD]</p>
+                
+                </li>
+
+                <li>[TBD]: <span class="toggle-link" data-target="item7">All Things Perfectoid II</span>
+    
+                <p id="item7" class="hidden"><b>Abstract</b>: About perfectoid spaces. [TBD]</p>
+                
+                </li>
+
+                <li>[TBD]: <span class="toggle-link" data-target="item8">Witt Vectors, Delta Rings, and the Stacky Perspective</span>
+    
+                <p id="item8" class="hidden"><b>Abstract</b>: [TBD]</p>
+                
+                </li>
+                <li>Dhruv [TBD]: <span class="toggle-link" data-target="item9">Higgs Bundles and the Classical Non-Abelian Hodge Correspondence over \(\mathbb{C}\)</span>
+    
+                <p id="item9" class="hidden"><b>Abstract</b>: [TBD]</p>
+                </li>
+
+                <li>[TBD]: <span class="toggle-link" data-target="item10">Non-Abelian Hodge Theory in Characteristic \(p\) &agrave la Ogus-Vologodsky</span>
+    
+                <p id="item10" class="hidden"><b>Abstract</b>: [TBD]</p>
+                </li>
+            </ol>
+            
+            More talks [TBD].
+  <script>
+    document.querySelectorAll(".toggle-link").forEach(link => {
+      link.addEventListener("click", () => {
+        const targetId = link.dataset.target;
+        document.getElementById(targetId).classList.toggle("hidden");
+      });
+    });
+  </script>
+        </p>
+        <p>
+            <h2>Resources</h2>
+            <ol>
+                <li>Lectures notes on <a href="https://swc-math.github.io/aws/2017/2017BhattNotes.pdf">The Hodge-Tate Decomposition via Perfectoid Spaces</a> for lectures given by Bhatt at the <a href="https://swc-math.github.io/aws/2017/index.html">Arizona Winter School 2017</a>.</li>
+                <li>
+                    <a href="https://math.stanford.edu/~conrad/papers/notes.pdf">CMI Summer School Notes on \(p\)-Adic Hodge Theory</a> by Brinon-Conrad.
+                </li>
+
+                <li>
+                    <a href="https://math.stanford.edu/~conrad/papers/aws.pdf">Several Approaches to Non-Archimedean Geometry</a> by Conrad.
+                </li>
+
+                <li>
+                    <a href="https://www.imo.universite-paris-saclay.fr/~fontaine/galoisrep.pdf">Theory of \(p\)-adic Galois Representations</a> by Fontaine-Ouyang. This contains a lot of foundational stuff in the first chapter.
+                </li>
+        
+                
+            
+            </ol>
+            If you have other learning resources to recommend, please let me know!
+        </p>
+        <p>
+            <h2>Mailing List</h2>
+            There is a mailing list for this seminar. If 
+            <ul>
+                <li>you are not on it and would like to be on it, or</li>
+                <li>you are on it and would like to be taken off it,</li>
+            </ul>
+            again please reach out to me at <a href="mailto: gg8327@princeton.edu">gg8327@princeton.edu</a>.
+        </p>
+
+        </section>
+
+        <section class="section-style">
+        <h2></h2>
+
+        
+
+        </section>
+    </div>
+    
+</body>
+</html>
+
