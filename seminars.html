@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Dhruv Goel</title>
-    <style>
-        body {
-            font-family: 'Trebuchet MS', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #333333;
-        }
-        .navbar {
+    <title>Seminars - Dhruv Goel</title>
+        <style>
+            body {
+                font-family: 'Trebuchet MS', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff;
+                color: #333333;
+            }
+            .navbar {
             display: flex;
             justify-content: space-between; /* Ensures equal spacing between items */
             align-items: center;
@@ -20,7 +20,7 @@
             padding: 0.5em; /* Added padding to provide more space */
             flex-wrap: wrap; /* Allows wrapping of items if necessary */
         }
-        .navbar a {
+            .navbar a {
             color: white;
             text-decoration: none;
             font-weight: bold;
@@ -68,47 +68,67 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
-        .container {
-            max-width: 1200px;
-            margin: 2em auto;
-            padding: 1em;
-        }
-        h1 {
-            color: #2e7d32;
-            text-align: center;
-        }
-        .download-link {
-            text-align: center;
-            margin: 1em 0;
-            margin-bottom: 2em;
-            font-size: 18px;
-        }
-        .download-link a {
-            color: #004d40;
-            text-decoration: none;
-            font-weight: bold;
-            background-color: #e8f5e9;
-            padding: 0.5em 1em;
-            border-radius: 5px;
-        }
-        .download-link a:hover {
-            background-color: #c8e6c9;
-        }
-        .embed-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 2em;
-        }
-        .embed-container iframe {
-            width: 80%;
-            height: 800px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+            .content {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 2em;
+                background-color: #f4f4f4;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .profile-picture {
+                margin-left: 2em;
+            }
+            h1 {
+                color: #2e7d32;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 2em auto;
+                padding: 1em;
+            }
+            p.big {
+                line-height: 1.5;
+            }
+            li {
+                margin: 10px 0;
+            }
+            .section-style {
+                margin: 2em 0;
+            }
+            .section-style h2 {
+                color: #333333;
+            }
+        </style>
+        <!-- MathJax Config + Conditional Lazy Load -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+
+  window.addEventListener("load", function() {
+    // Look for inline math delimiters in the page
+    const hasMath = document.querySelector(
+      "script[type='math/tex'], script[type='math/tex; mode=display'], " +
+      ":not(script):not(style):not(noscript):not(code):not(pre)" // avoid code blocks
+    )?.textContent?.match(/(\$[^$]+\$|\\\(|\\\[|\\begin\{.*?})/);
+
+    if (hasMath) {
+      var script = document.createElement("script");
+      script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
+      script.async = true;
+      document.head.appendChild(script);
+    }
+  });
+</script>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="cv.html">CV</a>
@@ -128,20 +148,22 @@
         </div>
         <a href="misc.html">Miscellaneous</a>
     </div>
+    <!-- Container for Research and Publications Page Content -->
     <div class="container">
-        <h1>Curriculum Vitae</h1>
+        <h1>Seminars</h1>
+        <section class="section-style">
         
-        <div class="download-link">
-            <a href="my_cv.pdf" download>Download CV</a>
-        </div>
+            Here you can find information about seminars I have organized or co-organized in the past. So far, we have:
 
-        
-        <div class="embed-container">
-            <iframe src="my_cv.pdf"></iframe>
-        </div>
-        
-        <center>This CV was last updated in July 2025.</center>
+            <ol>
+                <li><a href="rempaht.html">Remedial Mathematics for \(p\)-Adic Hodge Theory</a>, in Fall 2025.
+                </li>
+            </ol>
+        </section>
+
+    
     </div>
 </body>
 </html>
+
 
