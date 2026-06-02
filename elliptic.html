@@ -148,7 +148,7 @@
     </div>
     <!-- Container for Research and Publications Page Content -->
     <div class="container">
-        <h1>An Introduction to the Arithmetic of Elliptic Curves</h1>
+        <h1>The Arithmetic of Elliptic Curves</h1>
         <p class="big">Welcome to the course website (in progress) for the advanced course on elliptic curves at <a href="https://rossprogram.org/">Ross</a>/Ohio 2026. This course is intended as an introduction to the beautiful arithmetic and geometry of elliptic curves for second-year students (i.e. peer mentors) and counselors at Ross.<sup><a href="#fn1" id="ref1">1</a></sup></p>
         <div class="content">
             <div>
@@ -158,8 +158,9 @@
             <li><b>Meeting Times and Locations</b>: See the Ross Calendar for updated times and locations.
             <li><b>Topics Covered</b>: <em>The course topics will be adjusted based on the backgrounds and interests of the participants.</em> A tentative list of topics can be found <a href="elliptic.html#topics">below</a>.
             <li><b>Texts/References</b>: I will type up <a href="elliptic.html#notes">my own lecture notes</a>. For other references, see <a href="elliptic.html#references">the section below</a>.
-            <li><b>Prerequisites</b>: TBD<sup><a href="#fn2" id="ref2">2</a></sup>
-            <li><b>Assignments and Collaboration Policy</b>: There are no formal assignments, although I will produce <a href="elliptic.html#exercises">weekly exercise sheets</a>. You do not need to turn in solutions, but you are welcome to discuss your solutions with me as well. You are highly encouraged to read the <a href="curves.html#notes">lecture notes</a> carefully and to attempt each problem in the exercise sheets by yourself, having done which, collaboration and discussion with your peers is highly welcome and encouraged.
+            <li><b>Prerequisites</b>: <em>Prerequisites assumed will be adjusted based on the backgrouns and interests of the participants.</em> The current plan is to assume familiarity with the material on the Ross first-year sets, up to and including topics such as the basics of rings and fields. Some familiarity with number fields and with projective geometry will be helpful but is not strictly necessary.<sup><a href="#fn2" id="ref2">2</a></sup>
+            <li><b>Assignments and Collaboration Policy</b>: There are no formal assignments, although I will produce <a href="elliptic.html#exercises">weekly exercise sheets</a>. You do not need to turn in solutions, but you are welcome to discuss your solutions with me as well. You are highly encouraged to read the <a href="elliptic.html#notes">lecture notes</a> carefully and to attempt each problem in the exercise sheets by yourself, having done which, collaboration and discussion with your peers is highly welcome and encouraged.
+            <li><b>Software and Online Resources</b>: We will primarily use <a href="https://www.sagemath.org/">SageMath</a> to do computations, and we will also learn how to use the <a href="https://www.lmfdb.org/">LMFDB</a>.
         </ul>
 
    </div>
@@ -176,10 +177,36 @@
 
         <section class="section-style" id="topics">
         <h2>Topics Covered</h2>
-  The current (tentative, possibly slightly ambitious) list of topics I plan to talk about is:
+
+        <em>The course topics will be adjusted based on the backgrounds and interests of the participants.</em> The current (tentative, very ambitious) list of topics I plan to talk about is:
                 <ol>
-                    <li> TBD
+                    <li> Introduction and motivation: rational points on lines and conics, Pythagorean triples, Fermat's method of infinite descent</li>
+                    <li>Review of background material on projective geometry: homogeneous coordinates in the projective plane, intersections of projective curves and Bézout’s Theorem, singular points on curves, cubic curves and exceptional points on them</li>
+                    <li>Brief history detour and elliptic curves over \(\mathbb{C}\): Riemann surfaces, elliptic integrals, and basics of complex lattices</li>
+                    <li>Review of background material on curves: divisors, the Riemann-Roch Theorem, differentials, morphisms of curves, and ramification (as needed)</li>
+                    <li>The isomorphism classification of elliptic curves via the \(j\)-invariant, curves with special \(j\)-invariants and their automorphisms</li>
+                    <li>Nagell-Lutz theorem, outlook towards Mazur’s Theorem</li>
+                    <li>Isogenies, the invariant differential, and applications to torsion points</li>
+                    <li>Elliptic curves over finite fields: Hasse bound, the Weil conjectures including the Riemann hypothesis, and supersingular curves</li>
+                    <li>Review of local fields: nonarchimedean valuations, \(p\)-adic numbers, Hensel’s Lemma, Ostrowski's Theorem, local-to-global principles</li>
+                    <li>Elliptic curves over local fields:  formal group laws, reduction, Tamagawa numbers, applications to torsion subgroups</li>
+                    <li>Galois cohomology and applications to Kummer theory</li>
+                    <li>Elliptic curves over global fields I: local-to-global principles, Selmer and Tate-Shafarevich groups, and the weak Mordell-Weil Theorem</li>
+                    <li>Elliptic curves over global fields II: heights and the Mordell-Weil Theorem</li>
+                    <li>Descent by 2-isogeny and applications to rank computations and classical problems</li>
                 </ol>
+
+                Further topics (if time permits, and depending on the backgrounds and interests of the participants) include:
+
+                <ol start = 15>
+                    <li>Special cases of Mazur’s Theorem: the Weil pairing, the advanced perspective on 3-torsion on elliptic curves over \(\mathbb{R}\), and the Levi-Lind Theorem on the 2-primary subgroup</li>
+                    <li>Explicit families of elliptic curves with specified torsion, and an outlook towards modular curves</li>
+                    <li>Complex multiplication, Galois representations, and an outlook towards Fermat’s Last Theorem</li>
+                    <li>Arithmetic dynamics on elliptic curves: the dynamics of the duplication formula and Northcott’s Theorem on the finiteness of preperiodic points</li>
+                    <li>More on elliptic curves over finite fields: factorization algorithms and elliptic curve cryptography</li>
+                    <li>L-functions associated to elliptic curves and an outlook towards one of the Millenium Prize problems, the BSD conjecture</li>
+                </ol>
+
 
                 <section class="section-style" id="notes">
                 <h2>Lecture Notes</h2>
@@ -208,14 +235,28 @@
             
         <h2>Textbooks and References</h2>
         
-        Some other useful references at a level similar to that of this course are
+        The following are standard textbooks at a level similar to that of this course.
             <ol>
-                <li> [TBD]
-                
+                <li> <a href="https://www.cambridge.org/core/books/lmsst-24-lectures-on-elliptic-curves/718E07A075A3EC28DE3B048129B3B4E0">Lectures on Elliptic Curves</a> by Cassels, and
+                <li><a href="https://link.springer.com/book/10.1007/978-3-319-18588-0">Rational Points on Elliptic Curves</a> by Silverman and Tate.
+                </li>
             </ol>
     
-        
-        If you need assistance in accessing any of these references, please do not hesitate to reach out to me.
+        The following are standard textbooks at a slightly more advanced level, but which you might still find useful.
+
+        <ol start = 3>
+            <li> <a href="https://link.springer.com/book/10.1007/978-0-387-09494-6">The Arithmetic of Elliptic Curves</a> by Silverman, and</li>
+            <li> <a href="https://link.springer.com/book/10.1007/b97292">Elliptic Curves</a> by Husemöller.
+            </li>
+            <li>
+                <a href="https://pubs.ams.org/ebooks/stml/058/">Elliptic Curves, Modular Forms, and Their \(L\)-functions</a> by Álvaro Lozano-Robledo.
+            </li>
+        </ol>
+
+        Some lectures notes by Zhiyun Bai covering similar material can be found <a href="https://zb260.user.srcf.net/notes/III/elliptic.pdf">here.</a>
+
+        <p>These resources do not cover everything we will talk about in the course, but cover other topics. All the course materials for this course will be available freely via the lecture notes above.</p>
+        <p>If you need assistance in accessing any of these references, please do not hesitate to reach out to me.</p>
         </section>
 
     </div>
