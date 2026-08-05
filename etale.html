@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing & Publications - Dhruv Goel</title>
+    <title>ReMp-AHT Seminar - Dhruv Goel</title>
         <style>
             body {
                 font-family: 'Trebuchet MS', sans-serif;
@@ -20,7 +20,7 @@
             padding: 0.5em; /* Added padding to provide more space */
             flex-wrap: wrap; /* Allows wrapping of items if necessary */
         }
-        .navbar a {
+            .navbar a {
             color: white;
             text-decoration: none;
             font-weight: bold;
@@ -90,8 +90,11 @@
                 margin: 2em auto;
                 padding: 1em;
             }
+            p.big {
+                line-height: 1.5;
+            }
             li {
-              margin: 10px 0;
+                margin: 10px 0;
             }
             .section-style {
                 margin: 2em 0;
@@ -99,6 +102,16 @@
             .section-style h2 {
                 color: #333333;
             }
+      
+            .hidden {
+            display: none;
+             }
+            .toggle-link {
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+            }
+  </style>
         </style>
                 <!-- MathJax Config + Conditional Lazy Load -->
 <script>
@@ -149,88 +162,69 @@
         </div>
         <a href="misc.html">Miscellaneous</a>
     </div>
-
+    <!-- Container for Research and Publications Page Content -->
     <div class="container">
-        <h1>Notes and Publications</h1>
-
+        <h1>Étale Cohomology and the Weil Conjectures</h1>
         <section class="section-style">
-        <h2>Publications</h2>
-        <ol>
-            <li> On Powerful Integers Expressible as Sums of Two Coprime Fourth Powers (with <a href="https://people.math.harvard.edu/~elkies/">Noam D. Elkies</a>). <em>Res. Number Theory</em> <b>9</b>, 78 (2023) (proceedings of ANTS-XV 2022). <a href="https://doi.org/10.1007/s40993-022-00415-9">doi: 10.1007/s40993-022-00415-9</a>
-        </ol>
-        </section>
-        <section class="section-style">
-        <h2>Preprints</h2>
+        <p>This is the webpage for the weekly seminar on étale cohomology and the Weil conjectures, a learning seminar that intends to cover the basics of étale cohomology theory and go over the proofs by Grothendieck and Deligne of the Weil conjectures over the course of the fall semester.
+        </p>
+        
+        <p>
+            <h2>Logistics</h2>
+            <b>Time</b>: [TBD] on [TBD] <br>
+            <b>Place</b>: [TBD] <br>
+            <b>Contact</b>: Dhruv Goel (<a href="mailto:dhruvgoel@princeton.edu"><tt>dhruvgoel@princeton.edu</tt></a>).<br><br>
             
-        <ol>
-            <li> The Chow Ring Classes of \(\mathrm{PGL}_3\) Orbit Closures in \(\mathbb{G}(1, 5)\). 2022. [<a href="http://arxiv.org/abs/2310.18571">arXiv</a>]
-        </ol>
-        </section>
-        <section class="section-style">
-        <h2>Research Articles in Preparation</h2>
-        <ol>
-            <li id="poster"> Chow Classes of Varieties of Secant and Tangent Lines to a Projective Variety. Advisor: <a href="https://math.berkeley.edu/~hlarson/">Hannah Larson</a>. (<a href="notes/SRI_Poster.pdf">Poster</a> presented at <a href="https://sites.google.com/view/2025summerinstitute/home">SRI'25</a>.)
+        </p>
 
-        </ol>
-        </section>
-        
-        <section class="section-style" id="thesis">
-        <h2>Theses</h2>
-        <ol>
-            <li><a href="notes/Part_III_Essay_Final.pdf">Galois Cohomology (and the Isogeny Invariance of the Strong Birch and Swinerton-Dyer Conjecture for Abelian Varieties)</a>. Part III Essay, supervised by <a href="https://www.dpmms.cam.ac.uk/~jat58/">Jack Thorne</a>. May 2025.
-            </li>
-            <li> <a href="notes/Thesis_Goel_Edited.pdf">The Joys of the Atiyah-Singer Index Theorem</a>. Undergraduate Senior Thesis, advised by <a href="https://people.math.harvard.edu/~dafr/">Dan Freed</a> and <a href="https://www.math.harvard.edu/people/harris-joe/">Joe Harris</a>. March 2024. (Updated July 2025 to include minor corrections.)
-        </ol>
-        </section>
-        <section class="section-style">
-            <section class="section-style">
-        <h2>Errata Lists</h2>
-        
-        <ol>
-            <li><a href="notes/Observations_TRS.pdf">Observations on Vakil's <em>The Rising Sea</em></a></li>
-            <li><a href="notes/Errata_Addenda_First_Course.pdf">Errata and Addenda for Harris's <em>Algebraic Geometry: A First Course</em></a></li>
-
-        </ol>
-        </section>
-        <h2>Expository</h2>
-        
-        <ol>
-            <li><a href="notes/galois.pdf">Galois Theory Like You've Never Seen Before</a></li>
-            <li><a href="notes/Archimedean_Local_Fields.pdf">Archimedean Local Fields</a></li>
-            <li><a href="notes/Fundamental_Groups.pdf">Some Remarks on Fundamental Groups and Cohomological Dimension</a></li>
-            <li> <a href="notes/Clifford_Algebras_and_Spin_Groups.pdf">An Introduction to Clifford Algebras and Spin Groups</a>
-            <li> <a href="notes/Elliptic_K3_Surfaces.pdf">Elliptic K3 Surfaces</a>
-            <li> <a href="notes/Hamiltonian_Actions_and_Marsden-Weinstein-Meyer_Reduction.pdf">Hamiltonian Actions and Marsden-Weinstein-Meyer Reduction</a>
-            <li> <a href="notes/Symplectic_Geometry_and_Hamiltonian_Mechanics.pdf">Symplectic Geometry and Hamiltonian Mechanics</a> (with Charley Hutchison)
-            <li> <a href="notes/Covariant_Derivatives_Connections_Curvature.pdf">Covariant Derivatives, Connections, and Curvature</a>
-            <li> <a href="notes/Character_Table_of_Nonabelian_Group_of_Order_pq.pdf">The Character Table of the Nonabelian Group of Order \(pq\)</a>
-            <li> <a href="notes/Introduction_to_Modular_Jacobians.pdf">An Introduction to Modular Jacobians</a>
-            <li> <a href="notes/Rectangular_Circumhyperbolae.pdf">Rectangular Circumhyperbolae</a>
+        <p>
+            <h2>Talk Titles</h2>
+            <ol>
+                <li>Dhruv: <span class="toggle-link" data-target="item1">Organizational Meeting and Overview of the Weil Conjectures</span>
+    
+                <p id="item1" class="hidden">
+                    
+                    <b>&#8226; Logistics</b>: [TBD] on [TBD] in [TBD]
+                    <br>
+                    <b>&#8226; Abstract</b>: We will finalize the meeting time and place, discuss topics to be covered, and distribute the talks. If time permits, we will review the story of the Weil conjectures.</p>
                 
-        </ol>
-        </section> 
-        <section class="section-style">
-        <h2>Lecture Notes</h2>
+                </li>
+                
+            </ol>
+  <script>
+    document.querySelectorAll(".toggle-link").forEach(link => {
+      link.addEventListener("click", () => {
+        const targetId = link.dataset.target;
+        document.getElementById(targetId).classList.toggle("hidden");
+      });
+    });
+  </script>
+        </p>
+        <p>
+            <h2>Resources</h2>
+            <h3>Étale Cohomology</h3>
+            <ol>
+                <li>
+                    Milne's <a href="https://www.jmilne.org/math/CourseNotes/LEC.pdf">Lectures on Étale Cohomology</a>.
+                    
+                </li>
+            </ol>
 
-        <h3>Graduate Level</h3>
-        <ol>
-      
-            <li><a href="notes/Mathematical_Ghostbusters.pdf">Mathematical Ghostbusters: Despookifying Spectral Sequences</a> (in progress)</li>
-            <li><a href="notes/Cohomology_of_Curves.pdf">Cohomology of Curves</a></li>
-            <li> <a href="notes/CA_Notes.pdf">Commutative Algebra</a> (in progress)
-            <li> <a href="notes/AG_Notes.pdf">Algebraic Geometry</a> (in progress)
-        </ol>
-
-        <h3>Undegraduate and High School Level</h3>
-        <ol>
-            <li><a href="notes/Curves_Full.pdf">Plane Algebraic Curves</a></li>
-            <li> <a href="notes/A_Second_Course_in_Real_Analysis.pdf">A Second Course in Real Analysis</a> (in progress)</li>
-            <li><a href="notes/Representation_Theory_Notes.pdf">Representation Theory Review Notes</a>
-            <li><a href="notes/Math_57_Notes.pdf">Math 57: Introduction to Group Theory</a>
-        </ol>
+            <h3>Textbook References</h3>
+            If you have other learning resources to recommend, please let me know!
+        </p>
+        <p>
+            <h2>Mailing List</h2>
+            There is a mailing list for this seminar. If 
+            <ul>
+                <li>you are not on it and would like to be on it, or</li>
+                <li>you are on it and would like to be taken off it,</li>
+            </ul>
+            again please reach out to me at <a href="mailto:dhruvgoel@princeton.edu"><tt>dhruvgoel@princeton.edu</tt></a>.
+        </p>
         </section>
-        
     </div>
+    
 </body>
 </html>
 
